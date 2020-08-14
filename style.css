@@ -1,23 +1,103 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen - Bildgenerrator</title>
-  <link rel="stylesheet" href="./style.css">
+body {
+  background: steelblue;
+}
 
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<h1>Bild Generrator</h1>
+h1 {
+  color: white;
+  text-align: center;
+  fant-family: comic Sans Ms;
+  animation: fallen 1.5s ease;
+}
 
-<p>Ein sehr einfacher bild generrator</p>
+p {
+  color: white;
+  text-align: center;
+  fant-family: comic Sans Ms;
+  animation: vonRechts 1.5s ease;
+}
 
-<img id="hundebild" src="https://acegif.com/wp-content/uploads/funny-dog-111-gap.jpg" alt="Lustig">
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 450px;
+  border: 2px;
+  animation: vonLinks 1.5s ease;
+ 
+}
 
-<button onclick="bildGenerieren()">Bild Generator</button>
-<h1>😁</h1>
-<!-- partial -->
-  <script  src="./script.js"></script>
+button {
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+  width: 150px;
+  background-color: steelblue;
+  border: 2px solid white;
+  cursor: pointer;
+  font-family: Comic Sans Ms;
+  color: white;
+  animation: heben 1.5s ease;
+}
 
-</body>
-</html>
+@keyframes fallen {
+  0% {  
+  opacity: 0;
+  transform: translateY(-80px);
+  }
+   
+  100% {
+  opacity: 1;
+  transform: translateY(0px);
+  }
+}
+  
+@keyframes heben {
+  0% {  
+  opacity: 0;
+  transform: translateY(80px);
+  }
+   
+  100% {
+  opacity: 1;
+  transform: translateY(0px);
+  }
+}
+
+
+@keyframes fallen {
+  0% {  
+  opacity: 0;
+  transform: translateY(-80px);
+  }
+   
+  100% {
+  opacity: 1;
+  transform: translateY(0px);
+  }
+}
+  
+@keyframes vonLinks {
+  0% {  
+  opacity: 0;
+  transform: translateX(80px);
+  }
+   
+  100% {
+  opacity: 1;
+  transform: translateX(0px);
+  }
+}
+
+@keyframes vonRechts {
+  0% {  
+  opacity: 0;
+  transform: translateX(-80px);
+  }
+   
+  100% {
+  opacity: 1;
+  transform: translateX(0px);
+  }
+}
