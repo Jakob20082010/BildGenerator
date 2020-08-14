@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Bildgenerrator</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1>Bild Generrator</h1>
+
+<p>Ein sehr einfacher bild generrator</p>
+
+<img id="hundebild" src="https://acegif.com/wp-content/uploads/funny-dog-111-gap.jpg" alt="Lustig">
+
+<button onclick="bildGenerieren()">Bild Generator</button>
+<h1>😁</h1>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
