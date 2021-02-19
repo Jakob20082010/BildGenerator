@@ -27,4 +27,5 @@ function bildGenerieren() {
   
   document.getElementById("hundebild").src = meinArray[index];
 }
+moin
 
